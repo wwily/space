@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Labrada:ital,wght@1,500&display=swap');
+body{
+	background-color: skyblue;
+}
+p{
+	font-size: 30px;
+	color: blue;
+	font-family: cursive;
+}
+table{
+	border: double 5px lime;
+	width: 50%;
+	background: linear-gradient(#fff,#B5E0DB,#70E8DA);
+	border-collapse: separate;
+}
+th,td{
+	border: 1.2mm ridge rgba(211, 220, 50, .6);
+	width: 25%;
+	height: 1cm;
+	font-size: 24px;
+	font-family: 'Labrada', serif;
+}
+tr:hover{
+	background-color: silver;
+}
+td:hover{
+	background: linear-gradient(#B7F4F6,#BFF6B7);
+	font-weight: 700;
+	color: blue;
+	font-size: 1.5em ;
+	text-align: left;
+}
+tr:nth-child(even){
+	background-color: skyblue;
+}
+caption{
+	font-size: 30px;
+	font-family: cursive;
+	color: yellow;
+	text-shadow: 2px 2px orange;
+}

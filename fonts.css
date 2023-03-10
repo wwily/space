@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Storm&family=Yuji+Boku&display=swap');
+.first, .second{
+font-size: 50px;
+color: violet;
+}
+.first{
+font-family: 'Rubik Storm', cursive;
+}
+.second{
+font-family: 'Yuji Boku', serif;
+font-kerning: normal;
+letter-spacing: 7px;
+}
+.third{
+	font-size: 1cm;
+	color: blue;
+	font-style: italic;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.fourth{
+	font-size: 1cm;
+	color: blue;
+	font-variant: small-caps;
+	text-decoration: underline;
+	text-decoration-color: skyblue;
+	text-decoration-style: dotted;
+	text-underline-position: under;
+}
+.big{
+	font-size: 2em;
+	font-weight: 300;
+	color: purple;
+}
+.five{
+	font-family: 'Rubik Storm', cursive;
+	font-size: 2cm;
+	color: lime;
+	text-shadow: 5px -5px 15px green;
+	text-decoration: underline;
+	text-decoration-color: yellow;
+	text-decoration-style: wavy;
+	text-underline-position: under;
+}
+.six{
+	font-size: 2cm;
+	color: silver;
+	text-decoration: underline;
+	text-decoration-color: pink;
+	text-decoration-style: double;
+	text-underline-position:under;
+}
+

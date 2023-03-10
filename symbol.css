@@ -1,0 +1,39 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body{
+	background-color: #DFEFF8;
+}
+
+p.first{
+	color: black;
+	font-size: 1cm;
+	background: linear-gradient(Teal,Aqua); 
+	font-family: "Lucida Console", Courier, monospace;
+}
+
+.second{
+	font-size: 50px;
+	color: rgba(179, 228, 255, 0.9);
+	font-family: 'IBM Plex Mono', monospace;
+}
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Grape+Nuts&family=IBM+Plex+Mono:wght@100&family=Noto+Sans+Hanunoo&family=Open+Sans:ital,wght@1,500&family=Pacifico&display=swap');
+p.third{
+	color: #578CA9;
+	font-size: 1cm;
+	font-family: 'IBM Plex Mono', monospace;
+}
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Grape+Nuts&family=IBM+Plex+Mono:wght@100&family=Mochiy+Pop+One&family=Noto+Sans+Hanunoo&family=Open+Sans:ital,wght@1,500&family=Pacifico&family=Sofia+Sans+Extra+Condensed&display=swap');
+p.four{
+	color: #00CCFF;
+	font-size: 1cm;
+	font-family: Arial Narrow, sans-serif;
+}
+p.five{
+	color: #56B5CD;
+	font-size:30px;
+	font-family: Trattatello, fantasy;
+	}
+p.six{
+	color: #297082;
+	font-size: 30px;
+}

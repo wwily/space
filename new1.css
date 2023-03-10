@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+.c, .b, .d, .e, .f, .g, .j, .k, .l{
+	font-size: 30px;
+}
+.a{
+	font-family: 'Caveat', cursive;
+	font-size: 40px;
+	background: linear-gradient(#CED5FF,#CEE9FF);border-radius: 10%;
+	text-decoration: underline;
+	text-decoration-style: dotted;
+	text-decoration-color: blue;
+	text-underline-position: under;
+}
+.b{
+	font-family: 'El Messiri', sans-serif;
+}
+.d{
+	font-family: 'Pangolin', cursive;
+}
+.e{
+	font-family: 'Sofia Sans', sans-serif;
+}
+.f{
+	font-family: 'Underdog', cursive;
+}
+.g{
+	font-family: 'Prosto One', cursive;
+}
+.j{
+	font-family: 'Bad Script', cursive;
+}
+.k{
+	font-family: 'Marmelad', sans-serif;
+}
+.l{
+	font-family: 'Marck Script', cursive;
+}
