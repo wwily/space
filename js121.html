@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw</title>
+    <style>
+        body{
+            background-color: rgb(255, 255, 255);
+        }
+/*<button class="button-59" role="button">Button 59</button>*/
+
+.button-59 {
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 44px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 20px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-59:focus {
+  color: #171e29;
+}
+
+.button-59:hover {
+  border-color: rgb(183, 0, 255);
+  color: rgb(255, 0, 212);
+  fill: rgb(98, 0, 255);
+}
+
+.button-59:active {
+  border-color: rgb(162, 0, 255);
+  color: rgb(200, 0, 255);
+  fill: rgb(255, 0, 208);
+}
+
+@media (min-width: 768px) {
+  .button-59 {
+    min-width: 150px;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="toolbar">
+        <input type="color" aria-label="select pen color" />
+        <input
+          type="range"
+          min="2"
+          max="50"
+          value="5"
+          aria-label="select pen size" /><span class="output">5</span>
+        <input type="button" value="Clear canvas" class="button-59"/>
+      </div>
+      
+      <canvas class="myCanvas">
+        <p>Add suitable fallback here.</p>
+      </canvas>
+      <script>
+      const canvas = document.querySelector('.myCanvas');
+      const width = canvas.width = window.innerWidth;
+      const height = canvas.height = window.innerHeight - 85;
+      const ctx = canvas.getContext('2d');
+      
+      ctx.fillStyle = 'rgb(255,255,255)';
+      ctx.fillRect(0,0,width,height);
+      
+      const colorPicker = document.querySelector('input[type="color"]');
+      const sizePicker = document.querySelector('input[type="range"]');
+      const output = document.querySelector('.output');
+      const clearBtn = document.querySelector('input[type="button"]');
+      
+      
+      function degToRad(degrees) {
+        return degrees * Math.PI / 180;
+      };
+      
+      
+      
+      sizePicker.oninput = () => {
+        output.textContent = sizePicker.value;
+      }
+      
+      
+      let curX;
+      let curY;
+      let pressed = false;
+      
+      
+      document.onmousemove = (e) => {
+        curX = e.pageX;
+        curY = e.pageY;
+      }
+      
+      canvas.onmousedown = () => {
+        pressed = true;
+      };
+      
+      canvas.onmouseup = () => {
+        pressed = false;
+      }
+      
+      clearBtn.onclick = () => {
+        ctx.fillStyle = 'rgb(255,255,255)';
+        ctx.fillRect(0,0,width,height);
+      }
+      
+      function draw() {
+        if (pressed) {
+          ctx.fillStyle = colorPicker.value;
+          ctx.beginPath();
+          ctx.arc(curX, curY - 85, sizePicker.value, degToRad(0), degToRad(360), false);
+          ctx.fill();
+        }
+      
+        requestAnimationFrame(draw);
+      }
+      
+      draw();
+      </script>
+</body>
+</html>

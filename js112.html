@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Логін\пароль</title>
+    <style>
+        body{
+            background-image: url(https://www.snmaster.com/wp-content/uploads/2016/11/secret.png);
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let login=prompt("Введіть логін","");
+        if(login=="логін"){
+            alert("Логін вірний");
+            let password=prompt("Введіть пароль","");
+            if(password=="пароль"){
+                alert("Ласкаво просимо!👋")
+            }else if(password==null){
+                alert("Введення скасовано")
+            }else{
+                alert("Пароль невірний❌")
+            }
+         }else if(login==null){
+            alert("Введення скасовано")
+         }else{
+            alert("Логін не вірний❌")}
+    </script>
+</body>
+</html>

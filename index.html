@@ -4,7 +4,109 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>kosmo</title>
-	<link rel="stylesheet" type="text/css" href="css/kosmo.css">
+	<link rel="stylesheet" type="text/css" href="try.css">
+  <style>
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  height: 30px;
+  font-size: 13px;
+  margin-left: 350px;
+  text-align: center;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #0800ff,
+    #8563ff,
+    #7980ff,
+    #645f90,
+    #228777,
+    #4b4e5d,
+    #9e43ff,
+    #925f9e,
+    #422368
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+h2{
+	color: rgb(255, 255, 255);
+	font-size: 25px;
+	text-align: justify;
+	margin-left: 20px;
+	margin-right: 30px;
+	font-family: 'Marmelad', sans-serif;
+}
+
+.fixedbut { 
+  position: fixed;
+   bottom: 20px; 
+   right: 20px; 
+   display: block;
+   background-color: #3636361e;
+   border-radius: 50%;
+   color: #00000073;
+   text-decoration-line: none;
+   font-size: 40px;
+  }
+  .fixedbut:hover { 
+    background: #5151519e;
+    border-radius: 50%;
+   }
+   a{
+    text-decoration-line: none;
+    color: rgba(255, 255, 255, 0.758);
+    text-shadow: 1px 1px 1px rgba(130, 122, 245, 0.406);
+}
+  </style>
 </head>
 <body>
 <p id="up"></p>
@@ -25,6 +127,24 @@
 <img class="space" src="img/1.jpg">
 <figcaption>космічний простір</figcaption>
 </figure>
+
+
+
+
+<button onclick="myFunction()" class="button-85">&#9733;</button>
+
+<script>
+function myFunction() {
+  let text;
+  let person = prompt("Як Вас звати?", "");
+  if (person == null || person == "") {
+    text = "Приємного читання, друже!";
+  } else {
+    text = "Здрастуй " + person + "! Приємного читання☺";
+  }
+  alert(text);
+}
+</script>
 
 <h2>Зміст</h2>
 <div class="zmist">
@@ -91,12 +211,25 @@
 		<a href="base.html" target="_blank"><img src="img/2.png" width="70"></a>
 		<a href="fonts.html" target="_blank"><img src="img/4.png" width="95"></a>
 		<a href="new1.html" target="_blank"><img src="img/2.png" width="70"></a>
+		<a href="js111.html" target="_blank"><img src="img/4.png" width="95"></a><br>
+		<a href="js121.html" target="_blank"><img src="img/4.png" width="95"></a>
+        <a href="js119.html" target="_blank"><img src="img/2.png" width="70"></a>
+		<a href="js115.html" target="_blank"><img src="img/4.png" width="95"></a>
+        <a href="js120.html" target="_blank"><img src="img/2.png" width="70"></a>
+		<a href="js117.html" target="_blank"><img src="img/4.png" width="95"></a>
+        <a href="js118.html" target="_blank"><img src="img/2.png" width="70"></a>
+		<a href="js113.html" target="_blank"><img src="img/4.png" width="95"></a>
+		<a href="js112.html" target="_blank"><img src="img/2.png" width="70"></a>
+		<a href="js114.html" target="_blank"><img src="img/4.png" width="95"></a>
+		<a href="js116.html" target="_blank"><img src="img/2.png" width="70"></a>
+		
+
 		<p><h2>Мої контакти</h2></p>
 			<p>Пошта:xielian727@gmail.com</p>
 			
 		</p>
 	</footer>
 </div>
-<a href="#up"><img src="https://creazilla-store.fra1.digitaloceanspaces.com/emojis/45796/fast-up-button-emoji-clipart-md.png" width="50"></a>
+<a href="#up" class="fixedbut">&#11145;</a>
 </body>
 </html>

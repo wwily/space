@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Яка оцінка?</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+        body{
+            background-color: rgb(220, 220, 255);
+            font-size: 35px;
+            font-family: 'Caveat', cursive;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let countX=+prompt('Яка у Вас оцінка','');
+switch(countX){
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    document.write ('У Вас незадовільна оцінка😥')
+    break
+    case 5:
+    case 6:
+    document.write ('У Вас непогана оцінка👌')
+    break
+    case 7:
+    case 8:
+    case 9:
+    document.write ('У Вас файна оцінка!😉')
+    break;
+    case 10:
+    case 11:
+    case 12:
+    document.write ('У Вас прекрасна оцінка, Ви гарно попрацювали!🤩')
+    break;
+    default:
+    alert( 'Оцінку анульовано' );
+}
+    </script>
+</body>
+</html>

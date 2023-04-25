@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Змінимо фон</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+        body{
+            font-family: 'Underdog', cursive;
+            font-size: 27px;
+            text-align: center;
+        }
+
+.button-52 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:after {
+  content: "";
+  background-color: #7070703f;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+    </style>
+</head>
+<body>
+    <p>Здається, ця сторінка виглядає понуро. Пропоную змінити фон!</p>
+        <button id='button' class="button-52">Фон сайту</button>
+
+<script>
+const button = document.getElementById('button');
+const rainbow = ['#FF00FF', '#FFBEF7', '#C0BEFF', 'lightgreen', '#FFFAD6', '#FFD6D6', 'violet','silver','#D6FFF2','#F1BEFF','#DEFFBE','#9CFFFA','#DBFFFD','#C6CC55','#82CC55','#40D694','#D28EA3','#ED6E7B','#FE7B7B','#90F0DB'];
+
+function changeBackground(){
+	document.body.style.background = rainbow[Math.floor(20 * Math.random())];
+	
+}
+
+button.addEventListener('click', changeBackground);
+    </script>
+</body>
+</html>
